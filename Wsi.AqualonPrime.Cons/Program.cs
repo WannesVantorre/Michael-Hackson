@@ -10,19 +10,19 @@ namespace Wsi.AqualonPrime.Cons
             Console.WriteLine("Hello, World!");
             HackTheFutureClient client = new();
             await client.Login(Constants.Name, Constants.Token);
-            string startUrl = "https://app-htf-2024.azurewebsites.net/api/a/easy/sample";
+            string startUrl = "https://app-htf-2024.azurewebsites.net/api/a/easy/puzzle";
             _ = await client.GetAsync(startUrl);
             await Run(client);
         }
 
         public static async Task Run(HackTheFutureClient client)
         {
-            string getUrl = "https://app-htf-2024.azurewebsites.net/api/a/easy/sample";
+            string getUrl = "https://app-htf-2024.azurewebsites.net/api/a/easy/puzzle";
             CommandsDto commands = await client.GetFromJsonAsync<CommandsDto>(getUrl) ?? throw new InvalidDataException();
 
             int distance = CalculateDepthAndDistance(commands.Commands.Split(","));
 
-            string postUrl = "https://app-htf-2024.azurewebsites.net/api/a/easy/sample";
+            string postUrl = "https://app-htf-2024.azurewebsites.net/api/a/easy/puzzle";
             HttpResponseMessage httpResponseMessage = await client.PostAsJsonAsync(postUrl, distance);
             Console.WriteLine(httpResponseMessage.StatusCode);
         }
