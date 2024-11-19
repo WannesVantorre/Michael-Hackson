@@ -1,4 +1,5 @@
 ﻿using System.Net.Http.Json;
+using Wsi.AqualonPrime.Cons.Dtos;
 
 namespace Wsi.AqualonPrime.Cons
 {
@@ -18,11 +19,7 @@ namespace Wsi.AqualonPrime.Cons
                 throw new Exception("You weren't able to log in, did you provide the correct credentials?");
             }
 
-            AuthResponse? token = await response.Content.ReadFromJsonAsync<AuthResponse>();
-
-            if (token == null) {
-                throw new Exception("Invalid Token Parsing");
-            }
+            AuthResponse? token = await response.Content.ReadFromJsonAsync<AuthResponse>() ?? throw new Exception("Invalid Token Parsing");
             DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token.Token);
         }
     }
