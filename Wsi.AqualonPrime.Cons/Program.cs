@@ -2,9 +2,11 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        private static async Task Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
+            var client = new HackTheFutureClient();
+            await client.Login(Constants.Name, Constants.Token);
         }
     }
 }
