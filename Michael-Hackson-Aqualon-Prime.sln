@@ -3,20 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wsi.AqualonPrime.Cons", "Wsi.AqualonPrime.Cons\Wsi.AqualonPrime.Cons.csproj", "{A7263DB3-AB36-4D59-8926-53A651CC1B12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wsi.AqualonPrime.Cons", "Wsi.AqualonPrime.Cons\Wsi.AqualonPrime.Cons.csproj", "{A7263DB3-AB36-4D59-8926-53A651CC1B12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSI.TheSecretCodeOfTheCosmicStone.Cons", "WSI.TheSecretCodeOfTheCosmicStone.Cons\WSI.TheSecretCodeOfTheCosmicStone.Cons.csproj", "{A4AC752C-CEB1-4A3F-84B2-EF6F074EBD6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A7263DB3-AB36-4D59-8926-53A651CC1B12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A7263DB3-AB36-4D59-8926-53A651CC1B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7263DB3-AB36-4D59-8926-53A651CC1B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7263DB3-AB36-4D59-8926-53A651CC1B12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4AC752C-CEB1-4A3F-84B2-EF6F074EBD6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4AC752C-CEB1-4A3F-84B2-EF6F074EBD6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4AC752C-CEB1-4A3F-84B2-EF6F074EBD6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4AC752C-CEB1-4A3F-84B2-EF6F074EBD6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4CC2E64-19D9-4655-9BC8-23DF6FBD94F9}
 	EndGlobalSection
 EndGlobal
